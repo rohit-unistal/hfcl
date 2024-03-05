@@ -1,0 +1,35 @@
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/CityWaterJMC/citywaterJMC/app/src/main/res/drawable/oval_shape.xml" value="0.128" />
+        <entry key="..\:/CityWaterJMC/citywaterJMC/app/src/main/res/layout/activity_create_gap.xml" value="0.1" />
+        <entry key="..\:/CityWaterJMC/citywaterJMC/app/src/main/res/layout/activity_fitting.xml" value="0.14947916666666666" />
+        <entry key="..\:/CityWaterJMC/citywaterJMC/app/src/main/res/layout/activity_hindrance.xml" value="0.17916666666666667" />
+        <entry key="..\:/CityWaterJMC/citywaterJMC/app/src/main/res/layout/activity_home.xml" value="0.1" />
+        <entry key="..\:/CityWaterJMC/citywaterJMC/app/src/main/res/layout/activity_hsc.xml" value="0.16302083333333334" />
+        <entry key="..\:/CityWaterJMC/citywaterJMC/app/src/main/res/layout/activity_hsc2.xml" value="0.2046875" />
+        <entry key="..\:/CityWaterJMC/citywaterJMC/app/src/main/res/layout/activity_laying3.xml" value="0.19791666666666666" />
+        <entry key="..\:/CityWaterJMC/citywaterJMC/app/src/main/res/layout/activity_laying_manual.xml" value="0.12608695652173912" />
+        <entry key="..\:/CityWaterJMC/citywaterJMC/app/src/main/res/layout/activity_laying_offline.xml" value="0.2" />
+        <entry key="..\:/CityWaterJMC/citywaterJMC/app/src/main/res/layout/activity_remove_gap.xml" value="0.2046875" />
+        <entry key="..\:/CityWaterJMC/citywaterJMC/app/src/main/res/layout/toolbar.xml" value="0.18489583333333334" />
+        <entry key="..\:/CityWaterJWILAll/cityWaterJWILAll/app/src/main/res/layout/activity_home.xml" value="0.10009057971014493" />
+        <entry key="..\:/CityWaterJWILAll/cityWaterJWILAll/app/src/main/res/layout/activity_hsc.xml" value="0.1" />
+        <entry key="..\:/CityWaterJWILAll/cityWaterJWILAll/app/src/main/res/layout/activity_hsc2.xml" value="0.11764705882352941" />
+        <entry key="..\:/CityWaterJWILAll/cityWaterJWILAll/app/src/main/res/layout/activity_laying_offline.xml" value="0.2" />
+        <entry key="..\:/CityWaterJWILAll/cityWaterJWILAll/app/src/main/res/layout/activity_login.xml" value="0.12454710144927536" />
+        <entry key="..\:/CityWaterJWILAll/cityWaterJWILAll/app/src/main/res/layout/activity_record_crossing.xml" value="0.21197916666666666" />
+        <entry key="..\:/citywaterHFCL/citywaterHFCL/app/src/main/res/layout/activity_create_gap.xml" value="0.13125" />
+        <entry key="..\:/citywaterHFCL/citywaterHFCL/app/src/main/res/layout/activity_laying_offline.xml" value="0.13125" />
+        <entry key="..\:/citywaterHFCL/citywaterHFCL/app/src/main/res/layout/activity_login.xml" value="0.1421875" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="ibm-1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

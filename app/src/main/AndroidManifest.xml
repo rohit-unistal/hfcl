@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="unistal.com.citywaterhfcl">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/hfcl_logo"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@drawable/hfcl_logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".RecordSync2Activity"
+            android:exported="false" />
+        <activity
+            android:name=".LayingOfflinephotoActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".HindranceActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LayingManualActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MainActivity2"
+            android:exported="false" />
+        <activity
+            android:name=".HSC2Activity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".HSCActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".RecordCrossingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Crossing2Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".RecordGapActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".RemoveGap"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".CreateGapActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".RecordFittingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".LayingOfflineActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".RecordListActivity" />
+        <activity
+            android:name=".RecordSyncActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".CrossingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SurfaceActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".FittingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Laying3Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".EndGapActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".StartGapActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".IntermediateActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".EndNodeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".StartNodeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Laying2Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".HomeActivity"
+            android:icon="@drawable/logo"
+            android:screenOrientation="portrait" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="unistal.com.citywaterhfcl.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_list" />
+        </provider>
+
+        <service
+            android:name=".LocationService"
+            android:enabled="true"
+            android:exported="false" />
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+    </application>
+
+</manifest>

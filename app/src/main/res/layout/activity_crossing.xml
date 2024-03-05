@@ -1,0 +1,566 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+
+    android:orientation="vertical">
+    <include layout="@layout/toolbar"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_10sdp"
+
+
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/accuracytv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:layout_gravity="left"
+            android:textSize="@dimen/_14sdp"
+            android:textStyle="bold" />
+        <ImageView
+            android:id="@+id/netstatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:layout_gravity="right"
+
+            />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvform2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                app:cardCornerRadius="6dp"
+                app:cardElevation="6dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/darker_gray"
+                    android:orientation="vertical"
+                    android:padding="@dimen/_2sdp">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@android:color/white"
+                        android:orientation="vertical"
+                        android:padding="@dimen/_2sdp">
+
+                        <Button
+                            android:id="@+id/btnStartNode"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="10dp"
+                            android:padding="@dimen/_5sdp"
+                            android:background="@drawable/btn_drawable"
+                            android:text="Capture Start Point"
+                            app:elevation="@dimen/_15sdp"
+                            android:textColor="@android:color/white"
+                            android:textSize="@dimen/_14sdp"
+                            app:fontFamily="sans-serif" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/white"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/startLatitude"
+                            android:layout_width="110dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="left"
+                            android:text="Latitude"
+                            android:textSize="@dimen/_10sdp" />
+
+                        <EditText
+                            android:id="@+id/edit_start_latitude"
+                            android:layout_width="@dimen/_100sdp"
+                            android:layout_height="@dimen/_30sdp"
+                            android:inputType="text"
+                            android:maxLines="1"
+                            android:focusable="false"
+                            android:background="@android:drawable/editbox_background"
+                            android:gravity="right" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/white"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/startLongitude"
+                            android:layout_width="110dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="left"
+                            android:text="Longitude"
+                            android:textSize="@dimen/_10sdp" />
+
+                        <EditText
+                            android:id="@+id/edit_start_longitude"
+                            android:layout_width="@dimen/_100sdp"
+                            android:layout_height="@dimen/_30sdp"
+                            android:inputType="text"
+                            android:maxLines="1"
+                            android:focusable="false"
+                            android:background="@android:drawable/editbox_background"
+                            android:gravity="right" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvform4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                app:cardCornerRadius="6dp"
+                app:cardElevation="6dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/darker_gray"
+                    android:orientation="vertical"
+                    android:padding="@dimen/_2sdp">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@android:color/white"
+                        android:orientation="vertical"
+                        android:padding="@dimen/_2sdp">
+
+                        <Button
+                            android:id="@+id/btnEndNode"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:padding="@dimen/_5sdp"
+                            android:background="@drawable/btn_drawable"
+                            android:text="Capture End Point"
+                            android:textColor="@android:color/white"
+                            android:textSize="@dimen/_14sdp"
+                            app:fontFamily="sans-serif" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/white"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/endlatitude"
+                            android:layout_width="110dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="left"
+                            android:text="Latitude"
+                            android:textSize="@dimen/_10sdp" />
+
+                        <EditText
+                            android:id="@+id/edit_end_latitude"
+                            android:layout_width="@dimen/_100sdp"
+                            android:layout_height="@dimen/_30sdp"
+                            android:editable="false"
+                            android:focusable="false"
+                            android:maxLines="1"
+                            android:background="@android:drawable/editbox_background"
+                            android:gravity="right" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/white"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/editEndLongitude"
+                            android:layout_width="110dp"
+                            android:layout_height="wrap_content"
+
+                            android:gravity="left"
+                            android:text="Longitude"
+                            android:textSize="@dimen/_10sdp" />
+
+                        <EditText
+                            android:id="@+id/edit_end_Longitude"
+                            android:layout_width="@dimen/_100sdp"
+                            android:layout_height="@dimen/_30sdp"
+                            android:inputType="text"
+                            android:focusable="false"
+                            android:maxLines="1"
+                            android:background="@android:drawable/editbox_background"
+                            android:gravity="right" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/white"
+                        android:gravity="center"
+                        android:visibility="gone"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/editEndAltitude"
+                            android:layout_width="110dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="left"
+                            android:text="end Altitude"
+                            android:textSize="@dimen/_10sdp" />
+
+                        <EditText
+                            android:id="@+id/edit_end_altitude"
+                            android:layout_width="@dimen/_100sdp"
+                            android:layout_height="@dimen/_30sdp"
+                            android:inputType="text"
+                            android:maxLines="1"
+                            android:background="@android:drawable/editbox_background"
+                            android:gravity="right" />
+                    </LinearLayout>
+
+
+
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvform5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                app:cardCornerRadius="6dp"
+                app:cardElevation="6dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/darker_gray"
+                    android:orientation="vertical"
+                    android:padding="@dimen/_2sdp">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/white"
+                        android:gravity="center"
+
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/Length"
+                            android:layout_width="110dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="left"
+
+                            android:text="Length"
+                            android:textSize="@dimen/_10sdp" />
+
+                        <EditText
+                            android:id="@+id/editlength"
+                            android:layout_width="@dimen/_100sdp"
+                            android:layout_height="@dimen/_30sdp"
+                            android:maxLines="1"
+                            android:inputType="numberDecimal"
+                            android:background="@android:drawable/editbox_background"
+                            android:gravity="right" />
+                    </LinearLayout>
+                    <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/white"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/crossingclass"
+                        android:layout_width="110dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:text="Crossing Class"
+                        android:textSize="@dimen/_10sdp" />
+
+                    <Spinner
+                        android:id="@+id/spin_crossing_class"
+                        android:layout_width="@dimen/_100sdp"
+                        android:layout_height="@dimen/_30sdp"
+                        android:maxLines="1"
+                        android:background="@android:drawable/editbox_background"
+                        android:gravity="right" />
+                </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/white"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/crossingtype"
+                            android:layout_width="110dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="left"
+                            android:text="Crossing Type"
+                            android:textSize="@dimen/_10sdp" />
+
+                        <Spinner
+                            android:id="@+id/spin_crossing_type"
+                            android:layout_width="@dimen/_100sdp"
+                            android:layout_height="@dimen/_30sdp"
+                            android:maxLines="1"
+                            android:background="@android:drawable/editbox_background"
+                            android:gravity="right" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/white"
+                        android:gravity="center"
+
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/Owner"
+                            android:layout_width="110dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="left"
+
+                            android:text="Owner"
+                            android:textSize="@dimen/_10sdp" />
+
+                        <EditText
+                            android:id="@+id/editowner"
+                            android:layout_width="@dimen/_100sdp"
+                            android:layout_height="@dimen/_30sdp"
+                            android:maxLines="1"
+
+                            android:background="@android:drawable/editbox_background"
+                            android:gravity="right" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/white"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/crossingposition"
+                            android:layout_width="110dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="left"
+                            android:text="Crossing Position"
+                            android:textSize="@dimen/_10sdp" />
+
+                        <Spinner
+                            android:id="@+id/spin_crossing_position"
+                            android:layout_width="@dimen/_100sdp"
+                            android:layout_height="@dimen/_30sdp"
+                            android:maxLines="1"
+                            android:background="@android:drawable/editbox_background"
+                            android:gravity="right" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/white"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/crossingcassing"
+                            android:layout_width="110dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="left"
+                            android:text="Crossing Cassing"
+                            android:textSize="@dimen/_10sdp" />
+
+                        <Spinner
+                            android:id="@+id/spin_crossing_cassing"
+                            android:layout_width="@dimen/_100sdp"
+                            android:layout_height="@dimen/_30sdp"
+                            android:maxLines="1"
+                            android:background="@android:drawable/editbox_background"
+                            android:gravity="right" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/white"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/positionpipeline"
+                            android:layout_width="110dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="left"
+                            android:text="Position of Pipeline"
+                            android:textSize="@dimen/_10sdp" />
+
+                        <Spinner
+                            android:id="@+id/spin_positionpipeline"
+                            android:layout_width="@dimen/_100sdp"
+                            android:layout_height="@dimen/_30sdp"
+                            android:maxLines="1"
+                            android:background="@android:drawable/editbox_background"
+                            android:gravity="right" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/white"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tvPermissionAuthority"
+                            android:layout_width="110dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="left"
+                            android:text="Permission Authority"
+                            android:textSize="@dimen/_10sdp" />
+
+                        <EditText
+                            android:id="@+id/edit_permission_authority"
+                            android:layout_width="@dimen/_100sdp"
+                            android:layout_height="@dimen/_30sdp"
+                            android:maxLines="1"
+                            android:background="@android:drawable/editbox_background"
+                            android:gravity="right" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/white"
+
+                        android:gravity="center">
+
+                        <TextView
+                            android:id="@+id/tvRemarks"
+                            android:layout_width="110dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="left|top"
+                            android:text="Remarks"
+                            android:textSize="@dimen/_10sdp"/>
+
+
+                        <EditText
+                            android:id="@+id/edit_remarks"
+                            android:layout_width="@dimen/_100sdp"
+                            android:layout_height="@dimen/_30sdp"
+                            android:background="@android:drawable/editbox_background"
+                            android:gravity="right" />
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/white"
+                        android:gravity="center"
+
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tvContractor"
+                            android:layout_width="110dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="left"
+                            android:visibility="invisible"
+                            android:text="Contractor"
+                            android:textSize="@dimen/_10sdp" />
+
+                        <EditText
+                            android:id="@+id/edit_contractor"
+                            android:layout_width="@dimen/_100sdp"
+                            android:layout_height="@dimen/_30sdp"
+                            android:maxLines="1"
+                            android:visibility="invisible"
+                            android:background="@android:drawable/editbox_background"
+                            android:gravity="right" />
+                    </LinearLayout>
+
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/white"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+                        <Button
+                            android:id="@+id/btnSubmit"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="10dp"
+                            android:background="@drawable/btn_drawable"
+                            android:text="Submit"
+                            android:textColor="@android:color/white"
+                            android:textSize="@dimen/_14sdp"
+                            app:fontFamily="sans-serif"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/btnAdd" />
+                    </LinearLayout>
+
+                    <ListView
+                        android:id="@+id/lvPipeline"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:background="@android:color/white"
+                        app:layout_constraintTop_toBottomOf="@+id/btnSubmit" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

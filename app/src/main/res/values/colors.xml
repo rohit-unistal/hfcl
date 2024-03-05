@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+   <!-- <color name="colorPrimary">#026d1b</color>-->
+    <color name="colorPrimary">#5bc0de</color>
+
+   <!-- <color name="green">#d0d8d2</color>-->
+    <color name="colorPrimaryBlue">#5bc0de</color>
+    <!--<color name="colorPrimaryDark">#254117</color>-->
+    <color name="colorPrimaryDark">#3F51B5</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="fade_color">#33303F9F</color>
+    <color name="btn_fade_color">#80303F9F</color>
+    <color name="color1">#d9534f</color>
+    <color name="color2">#f0ad4e</color>
+    <color name="color3">#337ab7</color>
+    <color name="color4">#5bc0de</color>
+   <!-- <color name="color5">#398439</color>-->
+    <color name="color5">#63B3F1</color>
+
+    <color name="header_color">#AA303F9F</color>
+    <color name="text_color">#e6222222</color>
+    <color name="text_white">#FFFFFF</color>
+    <color name="text_gray">#AA000000</color>
+    // color added by Rk
+         <color name="backgroundcolor">#fcfcfc</color>
+        <color name="lightgray">#ededed</color>
+        <color name="deeppurple">#7c4dff</color>
+        <color name="yello">#ffb300</color>
+        <color name="green">#00bfa5</color>
+        <!--<color name="colorAccent">#FF4081</color>-->
+        <color name="darkblue">#23283a</color>
+        <color name="testcolorblue">#152b38</color>
+        <color name="pink">#fe104d</color>
+
+        <color name="black_overlay">#66000000</color>
+    <color name="igl_green">#5bc0de</color>
+    <color name="text_green">#015E34</color>
+    <color name="text_yellow">#ffd720</color>
+    <color name="btn_color">#fff5c9</color>
+    <color name="box_color">#f5f5f5</color>
+    <color name="boxborder_color">#2c4254</color>
+
+
+</resources>

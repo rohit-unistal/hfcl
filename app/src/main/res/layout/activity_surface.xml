@@ -1,0 +1,728 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <include layout="@layout/toolbar"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_10sdp"
+        android:gravity="left"
+
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/accuracytv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:layout_gravity="left"
+            android:textSize="@dimen/_14sdp"
+            android:textStyle="bold" />
+        <ImageView
+            android:id="@+id/netstatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:layout_gravity="right"
+
+            />
+
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:padding="@dimen/_18sdp"
+                android:background="@android:color/darker_gray"
+
+                app:cardElevation="6dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical"
+                    android:padding="@dimen/_2sdp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/white"
+                        android:gravity="center">
+
+                        <TextView
+                            android:id="@+id/start_optionstv"
+                            android:layout_width="110dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="left|top"
+                            android:text="Surface"
+                            android:textStyle="bold"
+                            android:textSize="@dimen/_10sdp"/>
+
+
+
+
+
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:background="@android:color/darker_gray"
+
+                android:padding="@dimen/_10sdp"
+                app:cardCornerRadius="6dp"
+                app:cardElevation="6dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical"
+                    android:padding="@dimen/_2sdp">
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/white"
+                        android:visibility="gone"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+
+                        <TextView
+                            android:id="@+id/datetv"
+                            android:layout_width="110dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="left"
+                            android:text="Date:"
+                            android:textSize="@dimen/_10sdp"/>
+
+                        <EditText
+                            android:id="@+id/edit_date"
+                            android:layout_width="@dimen/_100sdp"
+                            android:layout_height="@dimen/_30sdp"
+                            android:maxLines="1"
+                            android:textSize="@dimen/_12sdp"
+                            android:background="@android:drawable/editbox_background"
+                            android:focusable="false"
+                            android:gravity="right" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/white"
+                        android:gravity="center"
+                        android:visibility="gone"
+                        >
+
+                        <TextView
+                            android:id="@+id/zonetv"
+                            android:layout_width="110dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="left|top"
+                            android:text="Zone:"
+                            android:textSize="@dimen/_10sdp"/>
+
+
+                        <Spinner
+                            android:id="@+id/spin_zone"
+                            android:layout_width="@dimen/_100sdp"
+                            android:layout_height="@dimen/_30sdp"
+                            android:background="@android:drawable/editbox_background"
+                            android:gravity="right" />
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/white"
+                        android:gravity="center"
+                        android:visibility="gone"
+
+                        >
+
+                        <TextView
+                            android:id="@+id/pipetv"
+                            android:layout_width="110dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="left|top"
+                            android:text="Pipe Segment:"
+                            android:textSize="@dimen/_10sdp"/>
+
+
+                        <Spinner
+                            android:id="@+id/spin_pipe"
+                            android:layout_width="@dimen/_100sdp"
+                            android:layout_height="@dimen/_30sdp"
+                            android:background="@android:drawable/editbox_background"
+                            android:gravity="right" />
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/white"
+                        android:gravity="center">
+
+                        <TextView
+                            android:id="@+id/Surfacetv"
+                            android:layout_width="110dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="left|top"
+                            android:text="Surface Type:"
+                            android:textSize="@dimen/_10sdp" />
+
+
+                        <Spinner
+                            android:id="@+id/spin_surface"
+                            android:layout_width="@dimen/_100sdp"
+                            android:layout_height="@dimen/_30sdp"
+                            android:background="@android:drawable/editbox_background"
+                            android:gravity="right" />
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/white"
+                        android:visibility="gone"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+
+                        <TextView
+                            android:id="@+id/startnodetv"
+                            android:layout_width="110dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="left"
+                            android:text="Start Node:"
+                            android:textSize="@dimen/_10sdp"/>
+
+                        <EditText
+                            android:id="@+id/edit_start_node"
+                            android:layout_width="@dimen/_100sdp"
+                            android:layout_height="@dimen/_30sdp"
+                            android:maxLines="1"
+                            android:textSize="@dimen/_12sdp"
+                            android:background="@android:drawable/editbox_background"
+
+                            android:gravity="right" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/white"
+                        android:visibility="gone"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+
+                        <TextView
+                            android:id="@+id/endnodetv"
+                            android:layout_width="110dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="left"
+                            android:text="End Node:"
+                            android:textSize="@dimen/_10sdp"/>
+
+                        <EditText
+                            android:id="@+id/edit_end_node"
+                            android:layout_width="@dimen/_100sdp"
+                            android:layout_height="@dimen/_30sdp"
+                            android:maxLines="1"
+                            android:textSize="@dimen/_12sdp"
+                            android:background="@android:drawable/editbox_background"
+
+                            android:gravity="right" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/white"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:id="@+id/reportnotv"
+                            android:layout_width="110dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="left"
+                            android:text="Report No:"
+                            android:textSize="@dimen/_14sdp" />
+
+                        <EditText
+                            android:id="@+id/edit_reportno"
+                            android:layout_width="@dimen/_100sdp"
+                            android:layout_height="@dimen/_30sdp"
+                            android:maxLines="1"
+                            android:textSize="@dimen/_12sdp"
+                            android:background="@android:drawable/editbox_background"
+                            android:gravity="right" />
+                    </LinearLayout>
+                    <!--
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:background="@android:color/white"
+                                            android:gravity="center">
+
+                                            <TextView
+                                                android:id="@+id/pipesegmenttv"
+                                                android:layout_width="110dp"
+                                                android:layout_height="wrap_content"
+                                                android:gravity="left|top"
+                                                android:text="Pipe Segment"
+                                                android:textSize="@dimen/_10sdp" />
+
+
+                                            <EditText
+                                                android:id="@+id/edit_pipe_segment"
+                                                android:layout_width="@dimen/_100sdp"
+                                                android:layout_height="@dimen/_30sdp"
+                                                android:background="@android:drawable/editbox_background"
+                                                android:gravity="right" />
+
+
+                                        </LinearLayout>-->
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:padding="@dimen/_10sdp"
+                android:background="@android:color/darker_gray"
+
+                app:cardCornerRadius="6dp"
+                app:cardElevation="6dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical"
+                    android:padding="@dimen/_2sdp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@android:color/white"
+                        android:orientation="vertical"
+                        android:padding="@dimen/_2sdp">
+
+                        <Button
+                            android:id="@+id/btnStartNode"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="10dp"
+                            android:padding="@dimen/_5sdp"
+                            android:background="@drawable/btn_drawable"
+                            android:text="Capture Start Surface"
+                            app:elevation="@dimen/_15sdp"
+                            android:textColor="@android:color/white"
+                            android:textSize="@dimen/_14sdp"
+                            app:fontFamily="sans-serif" />
+
+                    </LinearLayout>
+
+
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/white"
+                        android:gravity="center">
+
+                        <TextView
+                            android:id="@+id/startlatitudetv"
+                            android:layout_width="110dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="left|top"
+                            android:text="Start Latitude"
+                            android:textSize="@dimen/_10sdp" />
+
+
+                        <EditText
+                            android:id="@+id/edit_start_latitude"
+                            android:layout_width="@dimen/_100sdp"
+                            android:layout_height="@dimen/_30sdp"
+                            android:background="@android:drawable/editbox_background"
+                            android:gravity="right" />
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/white"
+                        android:gravity="center">
+
+                        <TextView
+                            android:id="@+id/startlongitudetv"
+                            android:layout_width="110dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="left|top"
+                            android:text="Start Longitude"
+                            android:textSize="@dimen/_10sdp" />
+
+
+                        <EditText
+                            android:id="@+id/edit_start_longitude"
+                            android:layout_width="@dimen/_100sdp"
+                            android:layout_height="@dimen/_30sdp"
+                            android:background="@android:drawable/editbox_background"
+                            android:gravity="right" />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/white"
+                        android:gravity="center">
+
+                        <TextView
+                            android:id="@+id/startwidthtv"
+                            android:layout_width="110dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="left|top"
+                            android:text="Start width"
+                            android:textSize="@dimen/_10sdp" />
+
+
+                        <EditText
+                            android:id="@+id/edit_start_width"
+                            android:layout_width="@dimen/_100sdp"
+                            android:layout_height="@dimen/_30sdp"
+                            android:inputType="numberDecimal"
+                            android:background="@android:drawable/editbox_background"
+                            android:gravity="right" />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/white"
+                        android:gravity="center">
+
+                        <TextView
+                            android:id="@+id/startdepthtv"
+                            android:layout_width="110dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="left|top"
+                            android:text="Start Depth"
+                            android:textSize="@dimen/_10sdp" />
+
+
+                        <EditText
+                            android:id="@+id/edit_start_depth"
+                            android:layout_width="@dimen/_100sdp"
+                            android:layout_height="@dimen/_30sdp"
+                            android:inputType="numberDecimal"
+                            android:background="@android:drawable/editbox_background"
+                            android:gravity="right" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:padding="@dimen/_10sdp"
+                android:background="@android:color/darker_gray"
+
+                app:cardCornerRadius="6dp"
+                app:cardElevation="6dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical"
+                    android:padding="@dimen/_2sdp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@android:color/white"
+                        android:orientation="vertical"
+                        android:padding="@dimen/_2sdp">
+
+                        <Button
+                            android:id="@+id/btnEndNode"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="10dp"
+                            android:padding="@dimen/_5sdp"
+                            android:background="@drawable/btn_drawable"
+                            android:text="Capture End Surface"
+                            app:elevation="@dimen/_15sdp"
+                            android:textColor="@android:color/white"
+                            android:textSize="@dimen/_14sdp"
+                            app:fontFamily="sans-serif" />
+
+                    </LinearLayout>
+
+
+
+
+
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/white"
+                        android:gravity="center">
+
+                        <TextView
+                            android:id="@+id/endlatitudetv"
+                            android:layout_width="110dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="left|top"
+                            android:text="End Latitude"
+                            android:textSize="@dimen/_10sdp" />
+
+
+                        <EditText
+                            android:id="@+id/edit_end_latitude"
+                            android:layout_width="@dimen/_100sdp"
+                            android:layout_height="@dimen/_30sdp"
+                            android:background="@android:drawable/editbox_background"
+                            android:gravity="right" />
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/white"
+                        android:gravity="center">
+
+                        <TextView
+                            android:id="@+id/endlongitudetv"
+                            android:layout_width="110dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="left|top"
+                            android:text="End Longitude"
+                            android:textSize="@dimen/_10sdp" />
+
+
+                        <EditText
+                            android:id="@+id/edit_end_Longitude"
+                            android:layout_width="@dimen/_100sdp"
+                            android:layout_height="@dimen/_30sdp"
+                            android:background="@android:drawable/editbox_background"
+                            android:gravity="right" />
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/white"
+                        android:gravity="center">
+
+                        <TextView
+                            android:id="@+id/endwidthtv"
+                            android:layout_width="110dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="left|top"
+                            android:text="End width"
+                            android:textSize="@dimen/_10sdp" />
+
+
+                        <EditText
+                            android:id="@+id/edit_end_width"
+                            android:layout_width="@dimen/_100sdp"
+                            android:layout_height="@dimen/_30sdp"
+                            android:inputType="numberDecimal"
+                            android:background="@android:drawable/editbox_background"
+                            android:gravity="right" />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/white"
+                        android:gravity="center">
+
+                        <TextView
+                            android:id="@+id/enddepthtv"
+                            android:layout_width="110dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="left|top"
+                            android:text="End Depth"
+                            android:textSize="@dimen/_10sdp" />
+
+
+                        <EditText
+                            android:id="@+id/edit_end_depth"
+                            android:layout_width="@dimen/_100sdp"
+                            android:layout_height="@dimen/_30sdp"
+                            android:inputType="numberDecimal"
+                            android:background="@android:drawable/editbox_background"
+                            android:gravity="right" />
+
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:padding="@dimen/_10sdp"
+                android:background="@android:color/darker_gray"
+
+                app:cardCornerRadius="6dp"
+                app:cardElevation="6dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical"
+                    android:padding="@dimen/_2sdp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/white"
+                        android:gravity="center">
+
+                        <TextView
+                            android:id="@+id/trenchdepthtv"
+                            android:layout_width="110dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="left|top"
+                            android:text="capture photo"
+                            android:textSize="@dimen/_10sdp" />
+
+
+                        <ImageView
+                            android:id="@+id/imgView"
+                            android:layout_width="@dimen/_100sdp"
+                            android:layout_height="@dimen/_100sdp"
+                            android:background="@android:drawable/editbox_background"
+                            android:gravity="right" />
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/white"
+                        android:gravity="center"
+
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/lengthtv"
+                            android:layout_width="110dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="left"
+                            android:text="Restoration Status"
+                            android:textSize="@dimen/_10sdp" />
+
+                        <Spinner
+                            android:id="@+id/spin_restoration"
+                            android:layout_width="@dimen/_100sdp"
+                            android:layout_height="@dimen/_30sdp"
+                            android:inputType="numberDecimal"
+                            android:background="@android:drawable/editbox_background"
+                            android:gravity="right" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/white"
+
+                        android:gravity="center">
+
+                        <TextView
+                            android:id="@+id/tvRemarks"
+                            android:layout_width="110dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="left|top"
+                            android:text="Remarks"
+                            android:textSize="@dimen/_10sdp"/>
+
+
+                        <EditText
+                            android:id="@+id/edit_remarks"
+                            android:layout_width="@dimen/_100sdp"
+                            android:layout_height="@dimen/_30sdp"
+                            android:background="@android:drawable/editbox_background"
+                            android:gravity="right" />
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/white"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+                        <Button
+                            android:id="@+id/btnSubmit"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="10dp"
+                            android:background="@drawable/btn_drawable"
+                            android:text="Submit"
+                            android:textColor="@android:color/white"
+                            android:textSize="@dimen/_14sdp"
+                            app:fontFamily="sans-serif"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/btnAdd" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

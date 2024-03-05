@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Laying HFCL</string>
+    <string name="action_bar_title">Dasboard-Fittings</string>
+    <string name="powered_by_fps">&#169; Unistal Systems Pvt. Ltd.</string>
+    <string name="user">User ID</string>
+    <string name="zone">Zone</string>
+    <string name="dma">DMA</string>
+    <string name="password">Password</string>
+    <string name="log_in">Log In</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="btn_title_valve">Valve</string>
+    <string name="btn_title_tee">Tee</string>
+    <string name="btn_title_bend">Bend</string>
+    <string name="btn_title_reducer">Reducer</string>
+    <string name="btn_title_pipe">Tee</string>
+    <string name="btn_title_mjcollar">MJ Collar</string>
+    <string name="btn_title_endcap">Close</string>
+    <string name="btn_title_tank">Tank</string>
+    <string name="btn_title_pmp">Pump</string>
+    <string name="btn_title_flange">Flange</string>
+    <string name="location_not_deter">Location not determined</string>
+    <string name="try_again">Please try again!</string>
+
+</resources><!--
+<string name="app_name">cityWaterRanchi</string>-->
